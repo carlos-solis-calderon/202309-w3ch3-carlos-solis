@@ -24,7 +24,8 @@ export class Card extends Component {
     return `
     <li>
       <p>ID: ${this.pet.id}</p>
-      <p>Nombre: ${this.pet.name} Raza: ${this.pet.breed}</p>
+      <p>Nombre: ${this.pet.name}</p> 
+      <p>Raza: ${this.pet.breed}</p>
       <p>Dueño: ${this.pet.owner}</p>
       <p>Adoptado: ${this.pet.isAdopted}</p>
 

@@ -15,9 +15,10 @@ export class List extends Component {
   render() {
     super.render();
     const elements = repo().map((item) => new Card('ul', item as Pets));
+    console.log(elements);
   }
 
   createTemplate() {
-    return '<ul class="characters-list row list-unstyled"></ul>';
+    return '<ul class="Pets-list"></ul>';
   }
 }

@@ -1,10 +1,13 @@
 /* eslint-disable no-new */
 import { List } from './components/list';
+import { Footer } from './components/footer';
+import { Header } from './components/header';
 import './scss/style.scss';
-import './footer';
 
 function main() {
+  new Header('.app');
   new List('.app');
-  new ;
+  new Footer('.app');
 }
+
 main();
