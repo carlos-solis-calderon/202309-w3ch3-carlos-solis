@@ -1,13 +1,16 @@
+/* eslint-disable no-undef */
 export abstract class Component {
+  selector: string;
   template!: string;
   element!: Element;
-  constructor(public selector: string) {}
+  constructor(selector: string) {
+    this.selector = selector;
+  }
 
   render(position: InsertPosition = 'beforeend') {
-    const parentElement = document.querySelector(this.selector);
-    if (!parentElement) throw new Error('Invalid selector');
-    parentElement.insertAdjacentHTML(position, this.template);
-    this.element = parentElement.lastElementChild!;
-    return this.element;
+    const element = document.querySelector(this.selector);
+    if (!element) return;
+    element.insertAdjacentHTML(position, this.template);
+    this.element = element.lastElementChild!;
   }
 }
