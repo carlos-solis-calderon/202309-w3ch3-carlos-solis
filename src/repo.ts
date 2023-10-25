@@ -1,4 +1,4 @@
-import { type Pets } from './model/pets';
+import { Pets } from './model/pets';
 export const repo = () => {
   const data: Pets[] = [
     {

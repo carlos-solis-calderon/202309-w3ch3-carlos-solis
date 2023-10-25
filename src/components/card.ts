@@ -1,9 +1,10 @@
-import { Pet } from '../model/pets';
+import { Pets } from '../model/pets';
+import { repo } from '../repo';
 import { Component } from './components';
 
 export class Card extends Component {
-  pet: Pet;
-  constructor(selector: string, pet: Pet) {
+  pet: Pets;
+  constructor(selector: string, pet: Pets) {
     super(selector);
     this.pet = pet;
     this.manageComponent();
@@ -21,7 +22,15 @@ export class Card extends Component {
 
   createTemplate() {
     return `
-  <header>hola</header>
-`;
+    <li>
+      <p>ID: ${this.pet.id}</p>
+      <p>Nombre: ${this.pet.name}</p> 
+      <p>Raza: ${this.pet.breed}</p>
+      <p>Dueño: ${this.pet.owner}</p>
+      <p>Adoptado: ${this.pet.isAdopted}</p>
+
+    </li>
+  }`;
   }
 }
+repo();
