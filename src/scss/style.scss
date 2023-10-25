@@ -1,3 +1,65 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin-block-start: 10rem;
+}
+
+.pets {
+  list-style: none;
+}
+
+.list-container {
+  display: flex;
+  gap: 1rem;
+  margin-inline: 2rem;
+}
+
+.name-img {
+  display: flex;
+}
+.list-container {
+  border: 1px transparent black;
+  border-radius: 1rem;
+  background-color: rgb(254, 203, 141);
+}
+
+.id {
+  font-size: xx-small;
+  text-align: center;
+}
+
+li.pets {
+  padding-block: 2rem;
+  padding-inline: 4rem;
+}
+
+.font-weight {
+  font-weight: 600;
+}
+
+.name-img {
+  display: flex;
+}
+
+footer {
+  background-color: maroon;
+  color: bisque;
+  text-align: center;
+  margin-block-start: 8rem;
+}
+
+header {
+  font-size: larger;
+  text-align: center;
+  background-color: maroon;
+  color: bisque;
+  font-size: xx-large;
+}

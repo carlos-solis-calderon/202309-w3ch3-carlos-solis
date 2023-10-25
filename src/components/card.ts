@@ -1,5 +1,5 @@
 import { Pets } from '../model/pets';
-import { repo } from '../repo';
+import { repo } from '../data/repo';
 import { Component } from './components';
 
 export class Card extends Component {
