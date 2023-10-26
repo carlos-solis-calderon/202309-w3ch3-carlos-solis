@@ -20,15 +20,13 @@ ul {
   display: flex;
   gap: 1rem;
   margin-inline: 2rem;
+  border: 1px transparent black;
+  border-radius: 1rem;
+  background-color: rgb(254, 203, 141);
 }
 
 .name-img {
   display: flex;
-}
-.list-container {
-  border: 1px transparent black;
-  border-radius: 1rem;
-  background-color: rgb(254, 203, 141);
 }
 
 .id {
@@ -45,10 +43,6 @@ li.pets {
   font-weight: 600;
 }
 
-.name-img {
-  display: flex;
-}
-
 footer {
   background-color: maroon;
   color: bisque;
@@ -57,7 +51,6 @@ footer {
 }
 
 header {
-  font-size: larger;
   text-align: center;
   background-color: maroon;
   color: bisque;

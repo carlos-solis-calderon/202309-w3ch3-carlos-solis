@@ -1,12 +1,11 @@
-import { Pets } from '../model/pets';
-import { repo } from '../data/repo';
+import { Pet } from '../model/pets';
 import { Component } from './components';
 
 export class Card extends Component {
-  pet: Pets;
-  constructor(selector: string, pet: Pets) {
+  petList: Pet;
+  constructor(selector: string, petList: Pet) {
     super(selector);
-    this.pet = pet;
+    this.petList = petList;
     this.manageComponent();
   }
 
@@ -15,22 +14,13 @@ export class Card extends Component {
     this.render();
   }
 
-  render() {
-    super.render();
-    this.element.querySelector('#app');
-  }
-
   createTemplate() {
     return `
-    <li>
-      <p>ID: ${this.pet.id}</p>
-      <p>Nombre: ${this.pet.name}</p> 
-      <p>Raza: ${this.pet.breed}</p>
-      <p>Dueño: ${this.pet.owner}</p>
-      <p>Adoptado: ${this.pet.isAdopted}</p>
-
-    </li>
-  }`;
+    <div>
+      <li class= "pet data"><p>${this.petList.name}</p></li>
+      <li class= "pet data"><p>${this.petList.breed}</p></li>
+      <li class= "pet data"><p>${this.petList.isAdopted}</p></li>
+      <li class= "pet data"><p>${this.petList.owner}</p></li>
+    </div>`;
   }
 }
-repo();

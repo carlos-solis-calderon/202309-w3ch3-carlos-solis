@@ -1,8 +1,7 @@
 import { Component } from './components';
 import { Card } from './card';
 import { repo } from '../data/repo';
-import { Pets } from '../model/pets';
-
+import { pets } from '../model/pets';
 export class List extends Component {
   constructor(selector: string) {
     super(selector);
