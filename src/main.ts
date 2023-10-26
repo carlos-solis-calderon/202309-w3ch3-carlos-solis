@@ -5,9 +5,9 @@ import { Header } from './components/header';
 import './scss/style.scss';
 
 function main() {
-  new Header('.app');
-  new List('.app');
-  new Footer('.app');
+  new Header('#app');
+  new List('#app');
+  new Footer('#app');
 }
 
 main();
